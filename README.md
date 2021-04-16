@@ -1,2 +1,2 @@
-# Toy Projects for Fun and Practive
+# Toy Projects for Fun and Practice
 ---
