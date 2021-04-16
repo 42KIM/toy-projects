@@ -1,5 +1,5 @@
 # Toy Projects for Fun and Practice
-=============
-##JavaScript Projects
+***
+## JavaScript Projects
 ---
-+Joke-Teller
++ Joke-Teller
