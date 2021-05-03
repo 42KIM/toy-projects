@@ -2,6 +2,7 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
+const kakaoBtn = document.getElementById('kakao');
 const newQuoteBtn = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
 
@@ -48,7 +49,7 @@ async function getQuote() {
     }
 }
 
-// Tweet Quote
+// Twitter Quote
 function tweetQuote() {
     const quote = quoteText.innerText;
     const author = authorText.innerText;
@@ -56,9 +57,27 @@ function tweetQuote() {
     window.open(twitterUrl, '_blank');
 }
 
+// Kakao Link
+Kakao.init('e173def228082f57597abffb0f747f21');
+
+function sendKakoLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'text',
+      text:
+        `${quoteText.innerText} \n by ${authorText.innerText}`,
+      link: {
+        mobileWebUrl:
+          'https://42kim.github.io/quote-generator/',
+        webUrl:
+          'https://42kim.github.io/quote-generator/',
+      },
+    })
+}
+
 // Event Listeners
 newQuoteBtn.addEventListener('click', getQuote);
 twitterBtn.addEventListener('click', tweetQuote);
+kakaoBtn.addEventListener('click', sendKakoLink);
 
 // On Load
 getQuote();

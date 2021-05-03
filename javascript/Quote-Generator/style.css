@@ -66,6 +66,7 @@ button {
     outline: none;
     padding: 0.5rem 1.8rem;
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    margin: 0.2rem;
 }
 
 button:hover {
@@ -82,6 +83,14 @@ button:active {
 }
 
 .fa-twitter {
+    font-size: 1.5rem;
+}
+
+.kakao-button:hover {
+    color: #F7E600;
+}
+
+.iconify {
     font-size: 1.5rem;
 }
 

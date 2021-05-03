@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=icloud.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body>
     <div class="quote-container" id="quote-container">
@@ -22,9 +25,15 @@
         </div>
         <!-- Buttons -->
         <div class="button-container">
+            <!-- Twitter Button -->
             <button class="twitter-button" id="twitter" title="Tweet This!">
                 <i class="fab fa-twitter"></i>
             </button>
+            <!-- KakaoTalk Button -->
+            <button class="kakao-button" id="kakao" title="share with KakaoTalk">
+                <span class="iconify" data-icon="vs-kakaotalk" data-inline="false"></span>
+            </button>
+            <!-- New quote Button -->
             <button id="new-quote">New Quote</button>
         </div>
     </div>
