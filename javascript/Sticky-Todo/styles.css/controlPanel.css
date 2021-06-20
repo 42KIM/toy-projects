@@ -1,0 +1,118 @@
+.control_background {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 50%;
+}
+
+.controls_container {
+    display: none;
+    position: absolute;
+    top: 30%;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 188, 188);
+}
+
+.note_header {
+    width: 300px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: none;
+}
+
+.deleteBtn {
+    font-size: 20px;
+    color: rgb(114, 114, 114);
+    position: relative;
+    background: none;
+    border: none;
+    margin-right: 5px;
+}
+
+.deleteBtn:active {
+    position: relative;
+    color:rgb(0, 0, 0);
+    top: 1px;
+}
+
+.deleteBtn:hover {
+    color:rgb(0, 0, 0);
+}
+
+.deleteBtn:focus {
+    outline: none;
+}
+
+#inputTodo {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.countdownClock {
+    width: 280px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#setHour, #setMinute {
+    font-size: 20px;
+    width: 45px;
+}
+
+.note_colors {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.colorBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#createNoteBtn {
+    font-size: 20px;
+    color: rgb(114, 114, 114);
+    background: none;
+    border: none;
+    margin-bottom: 5px;
+}
+
+#createNoteBtn:active {
+    position: relative;
+    top:1px;
+}
+
+#createNoteBtn:hover {
+    color: rgb(0, 0, 0);
+}
+
+#createNoteBtn:focus {
+    outline: none;
+}
+
+.show {
+    display: flex;
+}

@@ -1,0 +1,101 @@
+.note {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 188, 188);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.noteHeader {
+    position: relative;
+    top: 0%;
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delnoteBtn {
+    position: relative;
+    background: none;
+    border: none;
+    margin-right: 5px;
+}
+
+.delnoteBtn:active {
+    position: relative;
+    top: 1px;
+}
+
+.delnoteBtn:focus {
+    outline: none;
+}
+
+.todoText {
+    width: 210px;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    align-self: center;
+    font-size: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.finishBtn {
+    color: rgb(175, 175, 175);
+    font-size: 25px;
+    background: none;
+    border: none;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.finishBtn:active {
+    position: relative;
+    top:2px;
+}
+
+.finishBtn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.finishBtn:focus {
+    outline: none;
+}
+
+.noteCD {
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.setHour{
+    width: 40px;
+    font-size: 20px;
+}
+
+.setMin {
+    width: 40px;
+    font-size: 20px;
+}
+
+.setBtn {
+    background: none;
+    border-style: ridge;
+    border-color: cornsilk;
+    border-radius: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.displayClock {
+    font-size: 40px;
+    border: none;
+    font-family: 'Nanum Pen Script', cursive;
+}

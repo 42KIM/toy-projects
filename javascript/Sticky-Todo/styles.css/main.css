@@ -1,0 +1,158 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#js-clock {
+    font-size: 150px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    color:rosybrown;
+    transition: color 0.5s ease-in-out;
+}
+
+#js-date {
+    color:rosybrown;
+}
+
+form {
+    font-size: 40px;
+}
+
+.js-greeting {
+    font-family: 'Caveat', cursive;
+}
+
+#inputUser {
+    width: 170px;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border-style: dotted;
+    text-align: center;
+}
+
+#inputUser:focus {
+    outline: none;
+}
+
+#inputUser::placeholder {
+    font-style: italic;
+    text-align: center;
+}
+
+#startAppBtn {
+    width: 10%;
+    color: rosybrown;
+    font-size: 30px;
+    margin-top: 80px;
+    background: none;
+    border: none;
+}
+
+#startAppBtn:active {
+    position: relative;
+    top:2px;
+}
+
+#startAppBtn:hover {
+    color: rgb(185, 105, 105);
+}
+
+#startAppBtn:focus {
+    outline: none;
+}
+
+.dropzone {
+    width: 100%;
+    height: 100%;
+}
+
+.doneTodosContainer {
+    position: absolute;
+    left: 88%;
+    top: -42%;
+    width: 11%;
+    height: 40%;
+    background-color: rgb(240, 222, 222);
+    transition: .5s;
+}
+
+.doneTodosContainer.active {
+    position: absolute;
+    left: 88%;
+    top: 6%;
+    box-shadow: 3px 3px 3px rgb(231, 224, 224);
+}
+
+#doneListBtn {
+    position: absolute;
+    left: 97%;
+    top: 2%;
+    color: rosybrown;
+    border-style: none;
+    background: none;
+}
+
+#doneListBtn:active {
+    top: 2.2%;
+}
+
+#doneListBtn:hover {
+    color: rgb(185, 105, 105);
+}
+
+#doneListBtn:focus {
+    outline: none;
+}
+
+.doneTodosContainer ul {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.resetBtn {
+    position: absolute;
+    left: 97%;
+    top: 95%;
+    color: rosybrown;
+    border: none;
+    background: none;
+}
+
+.resetBtn:focus {
+    outline: none;
+}
+
+.resetBtn:active {
+    top: 95.2%;
+}
+
+.resetBtn:hover {
+    color: rgb(185, 105, 105);
+}
+
+.finishedList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+li {
+    font-family: 'Nanum Pen Script', cursive;
+    text-decoration: none;
+}

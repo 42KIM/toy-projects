@@ -16,3 +16,6 @@
   + Twitter API
   + Kakaotalk API
 
++ [**Sticky-Todo**](https://github.com/42KIM/toy-projects/tree/master/javascript/Sticky-Todo) : Windows 스티커 메모와 비슷한 Todo List📝
+  + [Live Link](https://42kim.github.io/toy-projects/javascript/Sticky-Todo)
+  + 미완성

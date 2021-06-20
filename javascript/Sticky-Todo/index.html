@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Note</title>
+    <link rel="stylesheet" href="styles.css/main.css">
+    <link rel="stylesheet" href="styles.css/controlPanel.css">
+    <link rel="stylesheet" href="styles.css/note.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+        <h1 id="js-clock"></h1>
+        <h4 id="js-date"></h4>   
+        <form class="js-greeting">
+            <input type="text" id="inputUser" placeholder="ENTER USER NAME" onfocus="this.placeholder=''" onfocusout="placeholder='ENTER USER NAME'">
+        </form>
+        <button id="startAppBtn">
+            <i class="fas fa-edit"></i>
+        </button>
+        <div class="doneList">
+            <button id="doneListBtn">
+                <i class="fas fa-list fa-2x"></i>
+            </button>
+            <div class="doneTodosContainer">
+                <ul class="finishedList">- Completed -
+                </ul>
+            </div>
+        </div>
+        <button class="resetBtn">
+            <i class="fas fa-sign-out-alt fa-2x"></i>
+        </button>
+
+    </div>
+
+    <div class="control_background"></div>
+
+    <div class="controls_container">
+        <header class="note_header">
+            <button class="deleteBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </header>
+        <input type="text" id="inputTodo" placeholder="할 일을 입력하세요" onfocus="this.placeholder=''" onfocusout="placeholder='할 일을 입력하세요'">
+        <div class="note_colors">
+            <div class="colorBtn" style="background-color:rgb(255, 188, 188)"></div>
+            <div class="colorBtn" style="background-color:#ffd191"></div>
+            <div class="colorBtn" style="background-color:#ffe990"></div>
+            <div class="colorBtn" style="background-color:#93d39d"></div>
+            <div class="colorBtn" style="background-color:#b3ffee"></div>
+            <div class="colorBtn" style="background-color:#8dc1fd"></div>
+        </div>
+        <button id="createNoteBtn">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="js-clock.js"></script>
+    <script src="control.js"></script>
+    <script src="note.js"></script>    
+</body>
+</html>
